@@ -39,12 +39,12 @@ class Word {
 
   //méthode qui vérifi se toute les lettres ont été trouvée
   isAllLeterFound(){
-    return this.wordMapping.every(letterMapping => letterMapping.isVisible = true);
+    return this.wordMapping.every(letterMapping => letterMapping.isVisible);
   }
 
   //méthode qui révèle toute les lettres en cas de défaite
   revealWord(){
-    this.wordMapping.forEach(letterMapping => letterMapping.isVisible = false);
+    this.wordMapping.forEach(letterMapping => letterMapping.isVisible = true);
   }
 
   //méthode pour le rendu du mot à trouver

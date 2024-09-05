@@ -34,7 +34,7 @@ class Choice {
   //méthode pour obtenir le rendu des lettres
   getChoicesHtml(){
     return this.choicesMapping.map(letterMapping => 
-      !letterMapping.isChosen ? `<li class="scrabble-letter">${letterMapping.letter}</li>` : `<p class ="scrabble-letter" disabled>${letterMapping.letter}</p>`
+      !letterMapping.isChosen ? `<li class="scrabble-letter">${letterMapping.letter}</li>` : `<p class="scrabble-letter disabled">${letterMapping.letter}</p>`
     ).join('');
   }
 
